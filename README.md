@@ -1,6 +1,6 @@
 # YUI
 
-> A Vue.js project
+> [DEMO](https://969723815.github.io/YUI/dist/index.html)
 
 ## Build Setup
 
