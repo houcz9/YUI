@@ -1,4 +1,4 @@
-# ydjy
+# YUI
 
 > A Vue.js project
 
