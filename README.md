@@ -1,6 +1,25 @@
 # YUI
+> Mobile UI elements for **Vue 2.0**
 
 > [DEMO](https://969723815.github.io/YUI/dist/index.html)
+
+
+## 安装
+```shell
+npm i ydjyui -S
+```
+## 使用
+```javascript
+import Vue from 'vue'
+import YdjyUi from 'ydjyui'
+import '../static/css/yui.css'
+
+Vue.use(YdjyUi)
+```
+
+## CDN
+- https://969723815.github.io/YUI/static/css/yui.css
+
 
 ## Build Setup
 
