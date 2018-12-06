@@ -33,6 +33,7 @@
 					'图标',
 					'列表',
 					'网格',
+					'弹出菜单(移动教研定制)',
 					'弹出菜单',
 				]
 			}
@@ -70,6 +71,9 @@
 						break;
 					case '弹出菜单':
 						navigate='popover';
+						break;
+					case '弹出菜单(移动教研定制)':
+						navigate='popoverS';
 						break;
 					default:
 						navigate='icon';

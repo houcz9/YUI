@@ -10,6 +10,22 @@
 		</div>
 		<div class="g-bd">
 			<div class="u-tips">
+				复选框(带头像组织)
+			</div>
+			<y-check v-model="value" align="right" :options="options"></y-check>
+			<div class="m-lst">
+				<div class="f-flex f-fl-bet m-lst-mn">
+					<div class="m-lst-tle">
+						选中的项
+					</div>
+					<div class="f-flex">
+						<div class="m-lst-det f-fs-esm">
+							{{value}}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="u-tips">
 				复选框
 			</div>
 			<div class="m-lst">
@@ -90,6 +106,23 @@
 	export default {
 		data() {
 			return {
+				value: ['杨国宝'],
+				options: [{
+					label: '杨国宝',
+					nature: '一年级/语文',
+					value: '杨国宝',
+					img: '../../../static/img/att-head.png'
+				}, {
+					label: '刘二鹏',
+					nature: '一年级/语文',
+					value: '刘二鹏',
+					img: '../../../static/img/att-head.png'
+				}, {
+					label: '张文顺',
+					nature: '一年级/语文',
+					value: '张文顺',
+					img: '../../../static/img/att-head.png'
+				}],
 				checkData: [{
 						label: '选项A',
 						value: '值A'

@@ -17,6 +17,7 @@ import formInput from '@/components/form/input'
 import formSlider from '@/components/form/slider'
 import formImages from '@/components/form/images'
 import popover from '@/components/popover/main.index'
+import popoverS from '@/components/popover/popover'
 import icon from '@/components/icon/main.index'
 
 Router.prototype.goBack = function() {
@@ -93,6 +94,10 @@ export default new Router({
 		path: '/popover',
 		name: 'popover',
 		component: popover
+	},{
+		path: '/popoverS',
+		name: 'popoverS',
+		component: popoverS
 	},{
 		path: '/icon',
 		name: 'icon',
