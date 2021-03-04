@@ -5,9 +5,9 @@ import App from './App'
 import router from './router'
 import YdjyUi from 'ydjyui'
 
-
-Vue.config.productionTip = false
 Vue.use(YdjyUi)
+Vue.config.productionTip = false
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

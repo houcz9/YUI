@@ -2,10 +2,12 @@
 	<div class="list">
 		<div class="g-hd">
 			<div class="m-nav s-bgc-ess">
-				<div class="m-nav-btn f-pl s-fc-we" @click="back">
-					<i class="ydjy-arrow"></i>
+				<div class="m-nav-box f-pl f-flex f-fl-cen s-fc-we">
+					<div class="m-nav-btn" @click="back">
+						<i class="ydjy-arrow"></i>
+					</div>
 				</div>
-				<h1 class="s-fc-we">顶部选项卡</h1>
+				<h1 class="f-of1 s-fc-we">顶部选项卡</h1>
 			</div>
 		</div>
 		<div class="g-bd">

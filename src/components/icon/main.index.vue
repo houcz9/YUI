@@ -2,10 +2,12 @@
 	<div class="list">
 		<div class="g-hd">
 			<div class="m-nav s-bgc-ess">
-				<div class="m-nav-btn f-pl s-fc-we" @click="$router.goBack()">
-					<i class="ydjy-arrow"></i>
+				<div class="m-nav-box f-pl f-flex f-fl-cen s-fc-we">
+					<div class="m-nav-btn" @click="$router.goBack()">
+						<i class="ydjy-arrow"></i>
+					</div>
 				</div>
-				<h1 class="s-fc-we">图标</h1>
+				<h1 class="f-of1 s-fc-we">图标</h1>
 			</div>
 		</div>
 
@@ -13,7 +15,7 @@
 			<div class="u-tips">
 				点击高亮
 			</div>
-			<div class="f-pad1-5 s-bgc-we f-flex f-fl-wrap">
+			<div class="f-pad-1-half s-bgc-we f-flex f-fl-wrap">
 				<div class="u-ico" v-for="icon in iconData" :class="active==icon?'s-fc-ess':''" @click="active=icon">
 					<i :class="icon">
 						<i class="path1" v-if="icon=='ydjy-pen-3'"></i>

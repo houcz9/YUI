@@ -1,7 +1,14 @@
 {
   "name": "ydjyui",
-  "version": "1.0.9",
+  "version": "1.1.4",
   "description": "ydjy-ui",
+  "keywords": [
+    "component",
+    "yui",
+    "mobile",
+    "ydjy-ui",
+    "vue"
+  ],
   "main": "dist/ydjy-ui.min.js",
   "private": false,
   "license": "ISC",

@@ -2,13 +2,17 @@
 	<div class="list">
 		<div class="g-hd">
 			<div class="m-nav s-bgc-ess">
-				<div class="m-nav-btn f-pl s-fc-we" @click="$router.goBack()">
-					<i class="ydjy-arrow"></i>
+				<div class="m-nav-box f-pl f-flex f-fl-cen s-fc-we">
+					<div class="m-nav-btn" @click="$router.goBack()">
+						<i class="ydjy-arrow"></i>
+					</div>
 				</div>
-				<div class="m-nav-btn f-pr s-fc-we" @click="tableScale('',$event)">
-					<i class="ydjy-share"></i>
+				<div class="m-nav-box f-pr f-flex f-fl-cen s-fc-we">
+					<div class="m-nav-btn" @click="tableScale('',$event)">
+						<i class="ydjy-share"></i>
+					</div>
 				</div>
-				<h1 class="s-fc-we">弹出菜单</h1>
+				<h1 class="f-of1 s-fc-we">弹出菜单</h1>
 			</div>
 		</div>
 		<div class="g-mn">
@@ -85,7 +89,7 @@
 		<div class="m-pop" v-show="popoverShow2">
 			<div id="popover" class="m-pop-ct m-pop-cnt">
 				<div class="m-pop-ct-del">
-					<p class="f-pad1-5 f-fs-esm">这是居中弹出框，始终显示在屏幕中间</p>
+					<p class="f-pad-1-half f-fs-esm">这是居中弹出框，始终显示在屏幕中间</p>
 				</div>
 			</div>
 			<div class="m-pop-bj" @click="popoverShow2=false"></div>

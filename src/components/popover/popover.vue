@@ -2,10 +2,12 @@
 	<div class="list">
 		<div class="g-hd">
 			<div class="m-nav s-bgc-ess">
-				<div class="m-nav-btn f-pl s-fc-we" @click="$router.goBack()">
-					<i class="ydjy-arrow"></i>
+				<div class="m-nav-box f-pl f-flex f-fl-cen s-fc-we">
+					<div class="m-nav-btn" @click="$router.goBack()">
+						<i class="ydjy-arrow"></i>
+					</div>
 				</div>
-				<h1 class="s-fc-we">移动教研定制弹窗</h1>
+				<h1 class="f-of1 s-fc-we">移动教研定制弹窗</h1>
 			</div>
 		</div>
 		<div class="g-bd">
@@ -36,7 +38,7 @@
 		</div>
 		
 		<!--居中弹出-->
-		<y-popover v-model="popoverMiddle" position="middle">
+		<y-popover v-model="popoverMiddle"> 
 			<div class="m-pop-ct-del">
 				<p class="f-pad-1-half f-fs-esm">这是居中弹出框，始终显示在屏幕中间</p>
 			</div>
@@ -64,7 +66,11 @@
 </template>
 
 <script>
+//	import Popover from '../../../components/components/Popover/Popover.vue'
 	export default {
+//		components: {
+//			'y-popover': Popover /*注册自定义标签*/
+//		},
 		data() {
 			return {
 				popoverArrows: false,

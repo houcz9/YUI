@@ -2,17 +2,19 @@
 	<div class="grid">
 		<div class="g-hd">
 			<div class="m-nav s-bgc-ess">
-				<div class="m-nav-btn f-pl s-fc-we" @click="$router.goBack()">
-					<i class="ydjy-arrow"></i>
+				<div class="m-nav-box f-pl f-flex f-fl-cen s-fc-we">
+					<div class="m-nav-btn" @click="$router.goBack()">
+						<i class="ydjy-arrow"></i>
+					</div>
 				</div>
-				<h1 class="s-fc-we">滑块</h1>
+				<h1 class="f-of1 s-fc-we">滑块</h1>
 			</div>
 		</div>
 		<div class="g-bd">
 			<div class="u-tips">
 				滑块
 			</div>
-			<div class="f-pad1-5 s-bgc-we f-flex">
+			<div class="f-pad-1-half s-bgc-we f-flex">
 				<input type="range" class="u-fm-sd" :value="slider" :style="'background-size:'+slider+'% 100%'" min="0" max="100" @change="sliderPrice('slider',$event)" @touchmove="sliderPrice('slider',$event)">
 				<div class="u-fm-sd-cou">
 					{{slider}}
@@ -21,7 +23,7 @@
 			<div class="u-tips">
 				滑块(设置滑动间隔)
 			</div>
-			<div class="f-pad1-5 s-bgc-we f-flex">
+			<div class="f-pad-1-half s-bgc-we f-flex">
 				<input type="range" class="u-fm-sd" :value="slider1" step="10" :style="'background-size:'+slider1+'% 100%'" min="0" max="100" @change="sliderPrice('slider1',$event)" @touchmove="sliderPrice('slider1',$event)">
 				<div class="u-fm-sd-cou">
 					{{slider1}}
@@ -30,7 +32,7 @@
 			<div class="u-tips">
 				滑块(设定区间)
 			</div>
-			<div class="f-pad1-5 s-bgc-we">
+			<div class="f-pad-1-half s-bgc-we">
 				<div class="f-flex">
 					<div class="u-fm-sd-cou">
 						{{inMin}}

@@ -21,7 +21,7 @@
 			title: String,
 			position: {
 				type: String,
-				default: ''
+				default: 'middle'
 			},
 			value: Boolean
 		},

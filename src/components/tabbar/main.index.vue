@@ -1,12 +1,11 @@
 <template>
 	<div class="list">
 		<div class="g-hd">
-			<div class="m-nav s-bgc-ess">
-				<div class="m-nav-btn f-pl s-fc-we" @click="back">
+			<y-header title="选项卡">
+				<div slot="left" class="m-nav-btn"  @click="back">
 					<i class="ydjy-arrow"></i>
 				</div>
-				<h1 class="s-fc-we">选项卡</h1>
-			</div>
+			</y-header>
 		</div>
 		<div class="g-bd">
 			<div class="m-lst">
@@ -24,7 +23,11 @@
 </template>
 
 <script>
+	import Header from '../../../components/components/Header/Header.vue'
 	export default {
+		components: {
+			'y-header': Header /*注册自定义标签*/
+		},
 		data() {
 			return {
 				listData: [
@@ -38,6 +41,7 @@
 		},
 		methods: {
 			goDetails: function(data) {
+				console.log(data)
 				var navigate;
 				switch(data) {
 					case '顶部选项卡':
