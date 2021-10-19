@@ -6,7 +6,7 @@
 
 
 > Mobile UI elements for **Vue 2.0**
-> [DEMO](https://969723815.github.io/YUI/dist/)
+> [DEMO](https://houcz9.github.io/YUI/dist/#/)
 
 
 ## 安装
